@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import LoginControl from "./conditional_rendering/LoginControl";
+import Mailbox from "./conditional_rendering/Mailbox";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 
+ const males = ["Hello", "How are you?"];
+
 ReactDOM.render(
-  <LoginControl />,
+  <Mailbox unreadMessages={males}/>,
   document.getElementById("root")
 );
 
