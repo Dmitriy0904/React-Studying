@@ -1,4 +1,4 @@
-//Preventing Component from Rendering  by returning null
+//Preventing Component from Rendering by returning null
 import React from "react";
 import "./../App.css";
 

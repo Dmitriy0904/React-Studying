@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Page from "./conditional_rendering/Page.js"
+import NumberList from "./lists_and_keys/NumbersList.js"
 
 
 ReactDOM.render(
-  <Page/>,
+  <NumberList />,
   document.getElementById("root")
 );
 
