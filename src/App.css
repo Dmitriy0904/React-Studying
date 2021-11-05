@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* ************************************************************* */
+
+.warning{
+  width: 100%;
+  background-color: rgb(250, 110, 110);
+  margin-bottom: 5px;
+  padding: 3px;
+}

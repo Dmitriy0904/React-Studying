@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Mailbox from "./conditional_rendering/Mailbox";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import Page from "./conditional_rendering/Page.js"
 
-
- const males = ["Hello", "How are you?"];
 
 ReactDOM.render(
-  <Mailbox unreadMessages={males}/>,
+  <Page/>,
   document.getElementById("root")
 );
 
