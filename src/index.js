@@ -6,7 +6,7 @@ import NumberList from "./lists_and_keys/NumbersList.js"
 
 
 ReactDOM.render(
-  <NumberList />,
+  <NumberList numbers={[1, 2, 3, 4, 5]}/>,
   document.getElementById("root")
 );
 
