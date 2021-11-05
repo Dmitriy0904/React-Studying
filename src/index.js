@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import NameForm from "./forms/NameForm";
+import AuthorizationForm from "./forms/AuthorizationForm.js"
 
 
 ReactDOM.render(
-  <NameForm/>,
+  <AuthorizationForm />,
   document.getElementById("root")
 );
 
