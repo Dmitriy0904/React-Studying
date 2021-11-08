@@ -2,12 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import BoilWaterCalculator from "./lifting_state_up/boil_water_calculator/Calculator";
+import Counter from "./lifting_state_up/simple_counter/Counter";
 
 ReactDOM.render(
-  <BoilWaterCalculator />,
+  <Counter />,
   document.getElementById("root")
-
 );
 
 reportWebVitals();
