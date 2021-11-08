@@ -2,10 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import SignUpDialog from "./composition_vs_inheritance/specialization_with_classes/SignUpDialog";
+import FilterableProductTable from "./thinking_in_react/FilterableProductTable";
+
+const products = [
+  {category: 'Sporting Goods', price: '49.99$', stocked: true, name: 'Football'},
+  {category: 'Sporting Goods', price: '9.99$', stocked: true, name: 'Baseball'},
+  {category: 'Sporting Goods', price: '29.99$', stocked: false, name: 'Basketball'},
+  {category: 'Electronics', price: '99.99$', stocked: true, name: 'iPod Touch'},
+  {category: 'Electronics', price: '399.99$', stocked: false, name: 'iPhone 5'},
+  {category: 'Electronics', price: '199.99$', stocked: true, name: 'Nexus 7'}
+];
+
 
 ReactDOM.render(
-  <SignUpDialog />,
+  <FilterableProductTable products={products}/>,
   document.getElementById("root")
 );
 

@@ -76,3 +76,20 @@
 .fancy-border-blue{
   border-color: blue;
 }
+
+
+.container{
+  width: 240px;
+  padding: 10px;
+}
+
+
+.input-field{
+  height: 22px;
+  width: 100%;
+}
+
+.table-content{
+  width: 240px;
+  text-align: center;
+}
