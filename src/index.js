@@ -2,11 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import ReservationForm from "./forms/ReservationForm";
-
+import AuthorizationForm from "./forms/AuthorizationForm.js";
 
 ReactDOM.render(
-  <ReservationForm />,
+  <AuthorizationForm />,
   document.getElementById("root")
 );
 

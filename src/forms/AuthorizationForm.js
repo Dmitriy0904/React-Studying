@@ -1,49 +1,57 @@
 //Authorization form
 import React from "react";
+import "./../App.css";
 
-export default class NameForm extends React.Component {
+export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-        name: "", 
-        password: ""
+        nameField: "", 
+        passwordField: ""
     };
   }
 
 
-  handleNameChange = (event) => {
-    this.setState({ name: event.target.name });
-  };
+  handleChange = (event) => {
+      const target = event.target;
+      const value = target.value;
+      const name = target.name;
 
-
-  handlePasswordChange = (event) => {
-    this.setState({ password: event.target.password });
-  };
+      this.setState({[name]: value});
+  }
 
 
   handleSubmit = () => {
-    alert("Authorixation form was submitted");
+    alert("Authorization form was submitted");
   };
 
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          onChange={this.handleNameChange}
-          value={this.state.name}
-          placeholder="Name:"
-        />
-
-        <input 
-          type="password"
-          onChange={this.handlePasswordChange}
-          value={this.state.password}
-          placeholder="Password"  
-        />
-
-        <button>Submit</button>
+        <label>
+          <input
+            className="input-field"
+            name="nameField"
+            placeholder="Name"
+            type="text"
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          <input
+            className="input-field"
+            name="passwordField"
+            placeholder="Password"
+            type="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+          />
+        </label>
+        <br />
+        <input className="submit-button" type="submit" value="Authorize" />
       </form>
     );
   }

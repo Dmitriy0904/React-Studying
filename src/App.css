@@ -46,11 +46,20 @@
   padding: 3px;
 }
 
-
 .hr-dashed {
 	margin: 20px 0;
 	padding: 0;
 	height: 0;
 	border: none;
 	border-top: 2px dashed #ddd;
+}
+
+
+.input-field{
+  width: 250px;
+  height: 17px;
+}
+
+.submit-button{
+  width: 150px;
 }
