@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import FilterableProductTable from "./thinking_in_react/FilterableProductTable";
 
