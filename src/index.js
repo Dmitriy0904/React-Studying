@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import WelcomeDialog from "./composition_vs_inheritance/containment/WelcomeDialog";
+import App from "./composition_vs_inheritance/specialization/Dialog.js"
 
 ReactDOM.render(
-  <WelcomeDialog />,
+  <App />,
   document.getElementById("root")
 );
 
