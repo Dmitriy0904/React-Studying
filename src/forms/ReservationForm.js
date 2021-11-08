@@ -9,8 +9,6 @@ export default class ReservationForm extends React.Component {
       isGoing: true,
       numberOfGuests: 2,
     };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   handleInputChange(event) {
