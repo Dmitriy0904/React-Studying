@@ -63,3 +63,16 @@
 .submit-button{
   width: 150px;
 }
+
+
+
+.fancy-border{
+  margin: 5px;
+  padding: 5px 5px;
+  border: 10px solid;
+}
+
+
+.fancy-border-blue{
+  border-color: blue;
+}

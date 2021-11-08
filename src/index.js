@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Counter from "./lifting_state_up/simple_counter/Counter";
+import WelcomeDialog from "./composition_vs_inheritance/containment/WelcomeDialog";
 
 ReactDOM.render(
-  <Counter />,
+  <WelcomeDialog />,
   document.getElementById("root")
 );
 
