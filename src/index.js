@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import App from "./composition_vs_inheritance/specialization/Dialog.js"
+import SignUpDialog from "./composition_vs_inheritance/specialization_with_classes/SignUpDialog";
 
 ReactDOM.render(
-  <App />,
+  <SignUpDialog />,
   document.getElementById("root")
 );
 
