@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import AuthorizationForm from "./forms/AuthorizationForm.js"
+import EssayForm from "./forms/EssayForm";
 
 
 ReactDOM.render(
-  <AuthorizationForm />,
+  <EssayForm />,
   document.getElementById("root")
 );
 
