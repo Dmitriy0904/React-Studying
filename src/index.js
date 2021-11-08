@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import AuthorizationForm from "./forms/AuthorizationForm.js";
+import BoilWaterCalculator from "./lifting_state_up/boil_water_calculator/Calculator";
 
 ReactDOM.render(
-  <AuthorizationForm />,
+  <BoilWaterCalculator />,
   document.getElementById("root")
+
 );
 
 reportWebVitals();
