@@ -6,11 +6,23 @@ import "./../App.css";
 export default class ProductTable extends React.Component{
 
     render(){
+        const filterText = this.props.filterText;
+        const isStockedOnly = this.props.isStockedOnly;
+
         const rows = [];
         let lastCategory = null;
 
         const products = this.props.products;
         products.forEach(product => {
+            
+            if(!product.stocked && isStockedOnly){
+                return;
+            }
+
+            if(product.name.indexOf(filterText) === -1){
+                return;
+            }
+
             if(product.category !== lastCategory){
                 rows.push(
                     <ProductCategoryRow product={product} />
