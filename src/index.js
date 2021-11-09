@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Counter from "./hooks/introduction/Counter";
+import NumberList from "./hooks/state_hooks/NumberList";
 import reportWebVitals from "./reportWebVitals";
 
 
 ReactDOM.render(
-  <Counter/>,
+  <NumberList/>,
   document.getElementById("root")
 );
 
