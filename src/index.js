@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import Example from "./hooks/effect_hooks/Example.js";
+import FileInput from "./uncontrolled_components/FileInput";
 
 
 ReactDOM.render(
-  <Example />,
+  <FileInput />,
   document.getElementById("root")
 );
 
