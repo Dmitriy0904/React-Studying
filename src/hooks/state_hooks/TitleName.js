@@ -13,7 +13,7 @@ function TitleName() {
   useEffect(() => {
     //Changing html-page title
     document.title = `Hello ${name}`;
-    setIsSubmit(false);
+    setIsSubmit((isSubmit) => !isSubmit);
   }, [isSubmit]);
 
   return (
@@ -38,7 +38,7 @@ function TitleName() {
         />
       </label>
       <br /> <br />
-      <button onClick={(event) => setIsSubmit(true)}>Submit</button>
+      <button onClick={(event) => setIsSubmit((isSubmit) => !isSubmit)}>Submit</button>
     </div>
   );
 }

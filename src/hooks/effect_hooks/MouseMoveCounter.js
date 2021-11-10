@@ -15,7 +15,7 @@ function MouseMoveCounter() {
         if(x === y){
             setCross(x);
         }
-    });
+    }, [x, y]);
 
     useEffect(() => {
         setMoves((moves) => moves + 1);
