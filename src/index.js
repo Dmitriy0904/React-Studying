@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ToDoList from "./hooks/to_do_list/ToDoList";
+import TitleName from "./hooks/state_hooks/TitleName";
 import reportWebVitals from "./reportWebVitals";
 
 
 ReactDOM.render(
-  <ToDoList />,
+  <TitleName />,
   document.getElementById("root")
 );
 
