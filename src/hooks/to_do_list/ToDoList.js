@@ -7,11 +7,7 @@ function ToDoList(props) {
 
   return (
     <ul>
-      {todos.map((t) => (
-        <li key={t.id}>
-          <Element item={t} />
-        </li>
-      ))}
+      {todos.map((t) => ( <li key={t.id}><Element item={t} /></li>))}
     </ul>
   );
 }
