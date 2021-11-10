@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TitleName from "./hooks/state_hooks/TitleName";
+import MouseMoveCounter from "./hooks/effect_hooks/MouseMoveCounter";
 import reportWebVitals from "./reportWebVitals";
 
 
 ReactDOM.render(
-  <TitleName />,
+  <MouseMoveCounter />,
   document.getElementById("root")
 );
 
