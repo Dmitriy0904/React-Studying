@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ToDoList from "./hooks/to_do_list/ToDoList";
 import reportWebVitals from "./reportWebVitals";
-import FileInput from "./uncontrolled_components/FileInput";
 
 
 ReactDOM.render(
-  <FileInput />,
+  <ToDoList />,
   document.getElementById("root")
 );
 

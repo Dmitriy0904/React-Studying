@@ -1,19 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react/cjs/react.development";
 import "./styles.css";
 
 function Element(props) {
   const toDo = props.item;
 
+  //local state for the element
   const [status, setStatus] = useState(toDo.status);
 
-  
+  const handleStatusChange = () => {
+    setStatus(!status);
+  }
 
-//   const handleDeleteClick = (event) => {
-//     console.log(event.target.value);
-//     props.handleDeleteToDo(toDo.id);
-//   };
-
-  const isDone = toDo.status ? "done" : "not-done";
+  const isDone = status ? "done" : "not-done";
 
   return (
     <div className={"todo-list-item todo-" + isDone}>
@@ -22,7 +21,7 @@ function Element(props) {
 
       <p>
         Completed: 
-        <input type="checkbox" checked={toDo.status} onChange={event => setStatus(!status)}/>
+        <input type="checkbox" checked={status} onChange={handleStatusChange}/>
         <button>Delete</button>
       </p>
     </div>

@@ -9,10 +9,12 @@
 
 .todo-not-done{
     border-color: rgb(255, 189, 163);
+    background-color: rgb(245, 235, 233);
 }
 
 .todo-done{
     border-color: rgb(153, 218, 153);
+    background-color: rgb(236, 248, 236);
 }
 
 
