@@ -1,18 +1,14 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
+import { useContext } from "react/cjs/react.development";
+import { ToDoListContext } from "./Context";
 import "./styles.css";
 
 function Element(props) {
   const toDo = props.item;
 
-  //local state for the element
-  const [status, setStatus] = useState(toDo.status);
+  const {removeTodo, changeStatus} = useContext(ToDoListContext);
 
-  const handleStatusChange = () => {
-    setStatus(!status);
-  }
-
-  const isDone = status ? "done" : "not-done";
+  const isDone = toDo.status ? "done" : "not-done";
 
   return (
     <div className={"todo-list-item todo-" + isDone}>
@@ -21,8 +17,8 @@ function Element(props) {
 
       <p>
         Completed: 
-        <input type="checkbox" checked={status} onChange={handleStatusChange}/>
-        <button>Delete</button>
+        <input type="checkbox" checked={toDo.status} onChange={() => changeStatus(toDo.id)}/>
+        <button onClick={() => removeTodo(toDo.id)}>Delete</button>
       </p>
     </div>
   );

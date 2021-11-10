@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MouseMoveCounter from "./hooks/effect_hooks/MouseMoveCounter";
+import App from "./hooks/to_do_list/App";
 import reportWebVitals from "./reportWebVitals";
 
 
 ReactDOM.render(
-  <MouseMoveCounter />,
+  <App />,
   document.getElementById("root")
 );
 
