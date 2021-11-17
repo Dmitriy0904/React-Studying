@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./hooks/reduser_hook/App.js";
+import App from "./hooks/custom_hooks/App"
 import reportWebVitals from "./reportWebVitals";
 
 
