@@ -36,7 +36,7 @@ function App(){
     return (
     <div>
         <UsersContext.Provider value={{register}}>
-            <Form />
+            <Form users={users}/>
         </UsersContext.Provider>
         <UserList users={users}/>
     </div>

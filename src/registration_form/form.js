@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import useInput from "../hooks/custom_hooks/useInput";
 import { UsersContext } from "./context/context";
+import validate from "./validation";
 import "./styles.css";
 
 //validation
@@ -21,26 +22,34 @@ function createUser(username, password){
     };
 }
 
-
-function Form(){
+function Form(props){
+    const users = props.users;
     const { register } = useContext(UsersContext);
 
     const {username, setUsername} = useInput();
     const {password, setPassword} = useInput();
     const {repeatedPassword, setRepeatedPassword} = useInput();
+    const {age, setAge} = useInput(0);
 
+    const handleCreateNewUser = (event) =>{
 
-    const handleCreateNewUser = () =>{
-        //validation
-        const user = createUser(username, password);
-        console.log("Log from form:");
-        console.log(user);
-        register(user);
+        console.assert(username, password, repeatedPassword, age);
+
+        if(validate(users, username, password, repeatedPassword, age)){
+            const user = createUser(username, password);
+            register(user);
+        }
+        else{
+            console.assert("Incorect data entered!");
+        }
+        setUsername("");
+        setPassword("");
+        setRepeatedPassword("");
     }
 
 
     return <fieldset className="registration-form">
-        {/* <form> */}
+        <form onSubmit={(event) => handleCreateNewUser(event)}>
         <p>Username</p>
         <input className="input-panel" type="text"  value={username} onChange={setUsername} placeholder="Enter username..."/>
         <p>Password</p>
@@ -48,10 +57,10 @@ function Form(){
         <p>Repeat password</p>
         <input className="input-panel" type="password" value={repeatedPassword} onChange={setRepeatedPassword} placeholder="Enter password one more time..."/>
         <p>Age</p>
-        <input className="age-panel" type="number" min="1" max="110"/>
+        <input className="age-panel" type="number" min="1" max="110" value={age} onChange={setAge}/>
         <br /> <br />
-        <button className="register-button" onClick={handleCreateNewUser}>Register</button>
-        {/* </form> */}
+        <button className="register-button" type="submit">Register</button>
+        </form>
     </fieldset>;
 }
 
