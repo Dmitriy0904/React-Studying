@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./hooks/custom_hooks/App";
+import App from "./hooks/to_do_list/App";
 import reportWebVitals from "./reportWebVitals";
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react/cjs/react.development";
-import { ToDoListContext } from "./Context";
+import { ToDoListContext } from "./context";
 import "./styles.css";
 
 function Element(props) {

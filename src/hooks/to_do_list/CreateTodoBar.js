@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { ToDoListContext } from "./Context";
+import { ToDoListContext } from "./context";
 import "./styles.css";
 
 

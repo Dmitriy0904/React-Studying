@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
-import ToDoList from "./ToDoList";
-import { ToDoListContext } from "./Context";
-import CreateTodoBar from "./CreateTodoBar";
+import ToDoList from "./toDoList";
+import { ToDoListContext } from "./context";
+import CreateTodoBar from "./createTodoBar";
 
 function App() {
 
