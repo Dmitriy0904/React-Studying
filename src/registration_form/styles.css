@@ -1,6 +1,8 @@
 .registration-form{
-    width: 50%;
+    width: 500px;
     text-align: center;
+    padding: 14;
+    margin: 10px;
 }
 
 .input-panel{
@@ -13,4 +15,30 @@
 
 .register-button{
     width: 100px
+}
+
+.users-table{
+    width: 528px;
+    text-align: center;
+    margin: 20px 10px 10px 10px;
+}
+
+table{
+    border: 1px solid black;
+    background-color: lightgrey;
+    /* border-collapse: collapse; */
+}
+
+th{
+    border: 1px solid black;
+    background-color:burlywood;
+}
+
+td{
+    border: 1px solid black;
+    background-color: white;
+}
+
+ul{
+    list-style: none;
 }
