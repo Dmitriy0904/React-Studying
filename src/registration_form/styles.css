@@ -1,0 +1,16 @@
+.registration-form{
+    width: 50%;
+    text-align: center;
+}
+
+.input-panel{
+    width: 250px;
+}
+
+.age-panel{
+    width: 120px;
+}
+
+.register-button{
+    width: 100px
+}
